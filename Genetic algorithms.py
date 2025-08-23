@@ -203,5 +203,67 @@ if __name__ == "__main__":
 # In[ ]:
 
 
+/*output*/
+=== DNA Sequence Matching Genetic Algorithm ===
+Enter number of DNA sequences (chromosomes): 4
+Enter length of each DNA sequence (in bits): 5
+Enter DNA sequences as binary strings (e.g. 1100...):
+01100
+11001
+00101
+10011
 
+DNA Matching Table:
+DNA Seq No | DNA Sequence (bin) | x Value | Fitness (DNA match)  | % Prob  | Expected Count  | Actual Count
+---------------------------------------------------------------------------------------------------------
+0          | 01100              | 12      | 144                  | 12.47   | 0.50            | 0          
+1          | 11001              | 25      | 625                  | 54.11   | 2.16            | 2          
+2          | 00101              | 5       | 25                   | 2.16    | 0.09            | 0          
+3          | 10011              | 19      | 361                  | 31.26   | 1.25            | 1          
 
+Sum of Fitness (DNA   matches): 1155, Max Fitness: 625, Avg Fitness: 288.75
+
+Enter mating pool size (even number ≤ DNA sequence bit length 5 and ≤ population size 4): 1
+Invalid input. Mating pool size must be an even number, > 0, and ≤ DNA sequence length and population size.
+
+Enter mating pool size (even number ≤ DNA sequence bit length 5 and ≤ population size 4): 4
+Enter bit position to swap (0 to 4): 4
+
+Mating Pool before crossover at bit 4 (DNA sequence bits):
+DNA Seq No | DNA Sequence (bin)
+------------------------------
+0          | 01100            
+1          | 11001            
+2          | 00101            
+3          | 10011            
+
+Mating Pool after crossover at bit 4 (DNA sequence bits):
+DNA Seq No | DNA Sequence (bin)
+------------------------------
+0          | 01101            
+1          | 11000            
+2          | 00101            
+3          | 10011            
+
+Enter mutation binary strings (one per DNA sequence, length 5):
+Mutation mask for DNA chromosome 0: 10000
+Mutation mask for DNA chromosome 1: 00000
+Mutation mask for DNA chromosome 2: 00000
+Mutation mask for DNA chromosome 3: 00101
+
+Mutation masks applied to DNA sequences:
+DNA Chromosome 0: 10000
+DNA Chromosome 1: 00000
+DNA Chromosome 2: 00000
+DNA Chromosome 3: 00101
+Population of DNA sequences after mutation: ['11101', '11000', '00101', '10110']
+
+DNA Matching Table:
+DNA Seq No | DNA Sequence (bin) | x Value | Fitness (DNA match)  | % Prob  | Expected Count  | Actual Count
+---------------------------------------------------------------------------------------------------------
+0          | 11101              | 29      | 841                  | 43.67   | 1.75            | 2          
+1          | 11000              | 24      | 576                  | 29.91   | 1.20            | 1          
+2          | 00101              | 5       | 25                   | 1.30    | 0.05            | 0          
+3          | 10110              | 22      | 484                  | 25.13   | 1.01            | 1          
+
+Sum of Fitness (DNA matches): 1926, Max Fitness: 841, Avg Fitness: 481.50
