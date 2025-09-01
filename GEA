@@ -67,3 +67,38 @@ best_sol, best_fit = gea.run()
 
 print("\nFinal Best Solution:", best_sol)
 print("Final Best Fitness:", best_fit)
+
+
+
+#output
+Generation 1: Best Fitness = 2.23378, Best Solution = 1.24561
+Generation 2: Best Fitness = 2.23378, Best Solution = 1.24561
+Generation 3: Best Fitness = 2.24368, Best Solution = 1.24751
+Generation 4: Best Fitness = 2.24368, Best Solution = 1.24751
+Generation 5: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 6: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 7: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 8: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 9: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 10: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 11: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 12: Best Fitness = 2.25032, Best Solution = 1.25119
+Generation 13: Best Fitness = 2.25038, Best Solution = 1.25102
+Generation 14: Best Fitness = 2.25038, Best Solution = 1.25102
+Generation 15: Best Fitness = 2.25038, Best Solution = 1.25102
+Generation 16: Best Fitness = 2.25038, Best Solution = 1.25102
+Generation 17: Best Fitness = 2.25040, Best Solution = 1.25084
+Generation 18: Best Fitness = 2.25040, Best Solution = 1.25084
+Generation 19: Best Fitness = 2.25040, Best Solution = 1.25084
+Generation 20: Best Fitness = 2.25040, Best Solution = 1.25083
+Generation 21: Best Fitness = 2.25040, Best Solution = 1.25083
+Generation 22: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 23: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 24: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 25: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 26: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 27: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 28: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 29: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 30: Best Fitness = 2.25041, Best Solution = 1.25081
+
