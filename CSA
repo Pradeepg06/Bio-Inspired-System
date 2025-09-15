@@ -1,0 +1,70 @@
+import numpy as np
+
+# -----------------------------
+# Knapsack Problem Setup
+# -----------------------------
+values = [60, 100, 120]     # Example values
+weights = [10, 20, 30]      # Example weights
+capacity = 50
+n_items = len(values)
+
+# -----------------------------
+# Cuckoo Search Parameters
+# -----------------------------
+n_nests = 10         # number of solutions
+pa = 0.25            # discovery probability
+max_iter = 200
+
+# Fitness Function
+def fitness(solution):
+    total_value = np.sum(np.array(values) * solution)
+    total_weight = np.sum(np.array(weights) * solution)
+    if total_weight > capacity:
+        return -1  # penalize infeasible solutions
+    return total_value
+
+# Generate Random Solution
+def random_solution():
+    sol = np.random.randint(0, 2, n_items)
+    return sol
+
+# Levy Flight (Binary Version)
+def levy_flight(solution):
+    new_solution = solution.copy()
+    for i in range(len(solution)):
+        if np.random.rand() < 0.5:  # flip with some prob
+            new_solution[i] = 1 - new_solution[i]
+    return new_solution
+
+# -----------------------------
+# Cuckoo Search Algorithm
+# -----------------------------
+# Initialize nests
+nests = [random_solution() for _ in range(n_nests)]
+fitnesses = [fitness(s) for s in nests]
+
+for _ in range(max_iter):
+    # Generate new solutions via Levy flights
+    for i in range(n_nests):
+        new_sol = levy_flight(nests[i])
+        new_fit = fitness(new_sol)
+        if new_fit > fitnesses[i]:
+            nests[i] = new_sol
+            fitnesses[i] = new_fit
+    
+    # Abandon some nests with probability pa
+    for i in range(n_nests):
+        if np.random.rand() < pa:
+            nests[i] = random_solution()
+            fitnesses[i] = fitness(nests[i])
+
+# -----------------------------
+# Best Solution
+# -----------------------------
+best_index = np.argmax(fitnesses)
+best_solution = nests[best_index]
+best_value = fitnesses[best_index]
+
+print("Best Solution (items taken):", best_solution)
+print("Total Value:", best_value)
+print("Total Weight:", np.sum(np.array(weights) * best_solution))
