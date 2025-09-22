@@ -70,7 +70,7 @@ print("Final Best Fitness:", best_fit)
 
 
 
-#output
+'''output:
 Generation 1: Best Fitness = 2.23378, Best Solution = 1.24561
 Generation 2: Best Fitness = 2.23378, Best Solution = 1.24561
 Generation 3: Best Fitness = 2.24368, Best Solution = 1.24751
@@ -100,5 +100,5 @@ Generation 26: Best Fitness = 2.25041, Best Solution = 1.25081
 Generation 27: Best Fitness = 2.25041, Best Solution = 1.25081
 Generation 28: Best Fitness = 2.25041, Best Solution = 1.25081
 Generation 29: Best Fitness = 2.25041, Best Solution = 1.25081
-Generation 30: Best Fitness = 2.25041, Best Solution = 1.25081
+Generation 30: Best Fitness = 2.25041, Best Solution = 1.25081'''
 
