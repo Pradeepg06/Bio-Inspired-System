@@ -58,7 +58,7 @@ print("f(x) =", round(best_val, 4))
 
 
 
-### output
+'''output
 Iteration 1: Best x = 2.6725, Best f(x) = 26.2202
 Iteration 2: Best x = 2.4537, Best f(x) = 26.2479
 Iteration 3: Best x = 2.4537, Best f(x) = 26.2479
@@ -68,3 +68,4 @@ Iteration 5: Best x = 2.5095, Best f(x) = 26.2499
 Final Best Solution:
 x = 2.5095
 f(x) = 26.2499
+'''
