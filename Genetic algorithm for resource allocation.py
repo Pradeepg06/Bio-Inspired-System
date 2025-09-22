@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
 
 
-/*outpt:
+'''outpt:
 === Real-Time Resource Allocation GA ===
 Initial population (length 15 bits):
 Chromosome      | Allocations          | Fitness
@@ -252,4 +252,4 @@ Chromosome      | Allocations          | Fitness
 111110101111001 | [31, 11, 25]         | 0      
 100101110111000 | [18, 29, 24]         | 0      
 001010011000101 | [5, 6, 5]            | 16    
-*/
+'''
