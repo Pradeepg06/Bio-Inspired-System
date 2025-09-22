@@ -71,7 +71,7 @@ print("Total Weight:", np.sum(np.array(weights) * best_solution))
 
 
 
-#output
+'''output:
 Best Solution (items taken): [0 1 1]
 Total Value: 220
-Total Weight: 50
+Total Weight: 50'''
