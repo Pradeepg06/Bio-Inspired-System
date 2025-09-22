@@ -68,3 +68,10 @@ best_value = fitnesses[best_index]
 print("Best Solution (items taken):", best_solution)
 print("Total Value:", best_value)
 print("Total Weight:", np.sum(np.array(weights) * best_solution))
+
+
+
+#output
+Best Solution (items taken): [0 1 1]
+Total Value: 220
+Total Weight: 50
