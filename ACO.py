@@ -121,6 +121,6 @@ if __name__ == "__main__":
     plt.show()
 
 
-#output
+'''output:
 Best Path: [(0, 1), (1, 3), (3, 4), (4, 2), (2, 0)]
-Best Distance: 25.45368542698782
+Best Distance: 25.45368542698782'''
